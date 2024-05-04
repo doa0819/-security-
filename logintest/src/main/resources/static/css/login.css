@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /*background: url("bg.jpg") no-repeat center;*/
+    background-size: cover;
+}
+body::before {
+    content: "";
+    position: absolute; z-index: 1;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: rgba(red, green, blue, alpha);
+}
+.login-form {position: relative; z-index: 2;}
+.login-form h1 {
+    font-size: 32px; color: #010101;
+    text-align: center;
+}
+.int-area {width: 400px;}
+.int-area input {
+    font-family: "Pretendard-Regular";
+    width: 100%;
+    padding: 20px 10px 10px;
+    background-color: transparent;
+    border-radius: 15px;
+    border-color: green;
+    font-size: 18px;
+    outline: none;
+}
+.int-area label {
+    font-family: "Pretendard-Regular";
+    position: absolute; left: 10px; top: 15px;
+    font-size: 18px; color: #999;
+
+}
+.caption1 {
+    font-family: "Pretendard-Regular";
+    position: absolute;
+    left: 43%;
+    top: 120%;
+
+}
+.caption {
+    font-family: "Pretendard-Regular";
+    position: absolute;
+    left:30%;
+    top: 128%;
+
+}
+.btn-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    font-size: 30px;
+    padding: 10px 150px;
+    border: 5px color(yellow);
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-family: "Pretendard-Regular";
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.img-logo {
+
+    height: 300px;
+
+
+
+}
+
+.login-form{
+    margin-top: -20vh;
+}
+
+@media screen and (max-width: 375px) {
+
+
+    .login-form{
+        margin-top: -10vh;
+        scale: 50%;
+    }
+
+
+
+}
+
